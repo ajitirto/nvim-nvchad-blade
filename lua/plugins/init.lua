@@ -56,9 +56,9 @@ return {
     config = function(_, opts)
       require('nvim-treesitter.configs').setup(opts)
       -- Jalankan instalasi parser blade secara eksplisit
-      vim.cmd("TSInstall blade")
+      -- vim.cmd("TSInstall blade")
       -- Coba juga TSUpdate, kadang dibutuhkan untuk registrasi parser baru
-      vim.cmd("TSUpdate")
+      -- vim.cmd("TSUpdate")
     end,
   },
 
