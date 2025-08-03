@@ -56,9 +56,12 @@ require("conform").setup({
 
 require 'nvim-treesitter.configs'.setup {
     -- A list of parser names, or "all" (the five listed parsers should always be installed)
-    ensure_installed = { "php", "html" },
+    ensure_installed = { "php", "html", "css", "javascript" },
+    hightlight = {
+      enable = true,
 
-    ...
+    },
+
 }
 
 local parser_config = require "nvim-treesitter.parsers".get_parser_configs()
